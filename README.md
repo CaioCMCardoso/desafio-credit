@@ -11,6 +11,12 @@ source venv/bin/activate
 # Instalar Django e DRF
 pip install django djangorestframework
 
+# Instalar biblioteca necessária para verificação do cartão
+pip install git+https://github.com/maistodos/python-creditcard.git@main
+
+# Instalar biblioteca para fazer criptografia
+pip install cryptography
+
 # Criar um novo projeto chamado credit
 django-admin startproject credit
 
@@ -18,3 +24,7 @@ django-admin startproject credit
 python3 manage.py startapp api
 
 python3 manage.py migrate
+
+# Comando para rodar o server
+python3 manage.py runserver
+
