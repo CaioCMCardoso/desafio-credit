@@ -20,7 +20,11 @@ django-admin startproject credit
 # Inicializar projeto e fazer migrations iniciais
 python3 manage.py startapp api
 
+python3 manage.py makemigrations
 python3 manage.py migrate
+
+# Crie um superusuario para caso de teste
+python manage.py createsuperuser --email email@email.com --username admin
 
 # Comando para rodar o server
 python3 manage.py runserver
