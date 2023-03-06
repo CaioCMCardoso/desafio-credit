@@ -14,9 +14,6 @@ pip install django djangorestframework
 # Instalar biblioteca necessária para verificação do cartão
 pip install git+https://github.com/maistodos/python-creditcard.git@main
 
-# Instalar biblioteca para fazer criptografia
-pip install cryptography
-
 # Criar um novo projeto chamado credit
 django-admin startproject credit
 
